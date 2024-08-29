@@ -1,0 +1,23 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.3.2/",
+    "webui": "https://deno.land/x/webui@2.4.4/mod.ts",
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "dev": "deno run --allow-all --unstable-ffi --allow-ffi mod.ts"
+  },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "https://esm.sh/react@18.3.1"
+  },
+  "fmt": {
+    "lineWidth": 120
+  }
+}

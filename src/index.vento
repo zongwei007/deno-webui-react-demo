@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>WebUI 2 - Deno Hello World Example</title>
+    <script src="webui.js"></script>
+    <link rel="stylesheet" href="public/styles.css"></link>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="public/index.js"></script>
+  </body>
+</html>
